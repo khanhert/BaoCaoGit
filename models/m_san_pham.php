@@ -32,7 +32,7 @@ class M_San_Pham extends database
     $database = new database();
     $chuoiSQL = 'SELECT * FROM sanpham where maloai = ? and masp != ?';
     $database->setQuery($chuoiSQL);
-    return $database->loadAllrow(array($maloai, $masp));
+    return $database;
   }
 
   function Doc_cac_banner()
